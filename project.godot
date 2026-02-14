@@ -1,0 +1,25 @@
+; Engine configuration file.
+; It's best edited using the editor and not directly.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="BangOn Ppungchi Time - Day1 Slice"
+run/main_scene="res://scenes/Title.tscn"
+config/features=PackedStringArray("4.2")
+
+[autoload]
+
+GameState="*res://autoload/GameState.gd"
+SaveManager="*res://autoload/SaveManager.gd"
+Data="*res://autoload/Data.gd"
+
+[rendering]
+
+renderer/rendering_method="forward_plus"
+renderer/rendering_method.mobile="mobile"
