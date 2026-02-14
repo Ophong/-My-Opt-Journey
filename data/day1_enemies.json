@@ -1,0 +1,65 @@
+[
+  {
+    "id": "AE_YE",
+    "name": "아 예?",
+    "intro": [
+      "채팅이 '아 예?'로 물든다.",
+      "문맥을 다시 잡아야 한다."
+    ],
+    "turns": [
+      {
+        "qte": {
+          "options": [
+            "핵심만 10초로 정리한다",
+            "드립으로 얼버무린다",
+            "침묵하고 넘어간다"
+          ],
+          "correct": {
+            "default": 0
+          }
+        },
+        "on_correct": {
+          "trust": 1,
+          "chat_temp": 1
+        },
+        "on_wrong": {
+          "trust": -1,
+          "hp": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "SUB_RUSH",
+    "name": "똑똑똑똑 구독이 왔어요~",
+    "intro": [
+      "알림이 연달아 울린다.",
+      "리액션 텐션을 조절해야 한다."
+    ],
+    "turns": [
+      {
+        "qte": {
+          "options": [
+            "차분히 감사 인사를 한다",
+            "밈 폭주 리액션을 한다",
+            "알림을 꺼버린다"
+          ],
+          "correct": {
+            "default": 0,
+            "meme": 1
+          }
+        },
+        "on_correct_default": {
+          "trust": 2
+        },
+        "on_correct_meme": {
+          "buzz": 2,
+          "trust": -1
+        },
+        "on_wrong": {
+          "trust": -2
+        }
+      }
+    ]
+  }
+]
